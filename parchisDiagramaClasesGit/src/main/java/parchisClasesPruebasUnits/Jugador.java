@@ -10,11 +10,13 @@ public class Jugador {
 
 	private String nombre;
 	private Tablero tablero;
+	private Ficha ficha;
 	
-	public Jugador(String nombre, Tablero tablero) {
+	public Jugador(String nombre, Tablero tablero, Ficha ficha) {
 		
 		this.nombre = nombre;
 		this.tablero = tablero;
+		this.ficha=ficha;
 		
 	}
 	
@@ -53,8 +55,7 @@ public class Jugador {
 	
 	public void moverFicha(int cs) {
 		
-		int origen = consultarTablero();
-		tablero.cambiarFicha(origen, origen+cs);;
+		ficha.mover(cs);
 		
 	}
 	
