@@ -17,8 +17,8 @@ public class Juego {
 		Dado dado1 = new Dado();
 		Ficha miFicha=new Ficha();
 		Ficha suFicha=new Ficha();
-		Jugador yo = new Jugador("Angel", tablero, miFicha);
-		Jugador el = new Jugador("Angel", tablero, suFicha);
+		Jugador yo = new Jugador("Angel", tablero, miFicha, "usuario1", "password1");
+		Jugador el = new Jugador("Angel", tablero, suFicha, "usuario2", "password2");
 		
 		do {
 

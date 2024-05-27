@@ -6,14 +6,15 @@ package parchisClasesPruebasUnits;
 /**
  * 
  */
-public class Jugador {
+public class Jugador extends Usuario {
 
 	private String nombre;
 	private Tablero tablero;
 	private Ficha ficha;
 	
-	public Jugador(String nombre, Tablero tablero, Ficha ficha) {
+	public Jugador(String nombre, Tablero tablero, Ficha ficha, String user1, String pass1) {
 		
+		super(user1,pass1);
 		this.nombre = nombre;
 		this.tablero = tablero;
 		this.ficha=ficha;
