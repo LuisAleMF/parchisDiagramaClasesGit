@@ -37,13 +37,13 @@ public class Jugador extends Usuario {
 	
 	public int consultarTablero() {
 		
-		boolean[] casillas = tablero.consultarCasillas();
+		int[] casillas = tablero.consultarCasillas();
 		
 		int posicion = 0;
 		
 		for (int i = 0; i<tablero.consultarNumCasillas(); i++) {
 			
-			if (casillas[i]==true) {
+			if (casillas[i]==1) {
 				
 				posicion = i;
 				break;
